@@ -11,7 +11,6 @@ RUN \
     apt-get -y install wget build-essential checkinstall libgmp3-dev python-dev && \
     wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python && \
     rm -rf setuptools*.zip && \
-    rm -f ez_setup.py && \
     easy_install pip && \
     pip install --upgrade --upgrade --ignore-installed --no-cache-dir pip && \
     pip install --upgrade --upgrade --ignore-installed --no-cache-dir virtualenv && \
