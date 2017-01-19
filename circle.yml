@@ -6,7 +6,7 @@ machine:
 
 test:
   override:
-    - docker build -t $DOCKER_NAME .
+    - docker build --no-cache -t $DOCKER_NAME .
 
 deployment:
   hub:
